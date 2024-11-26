@@ -5,57 +5,66 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Kanit', 'Lexend', sans-serif;
 }
 
 body {
-    font-family: "Lexend", "sans-serif";
-    overflow-x: hidden;
+    background: #c3cfe2;
+    min-height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-#Menu {
+header {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+
+nav {
+    display: flex;
     width: 100%;
-    height: 150px;
-    display: flex;
-    align-items: center;
-    gap: 15px;
     justify-content: center;
-    padding: 0 15px;
-    background-image: linear-gradient(to right, rgb(32, 32, 32), rgb(19, 112, 92));
-    border-bottom: 2px dashed white;
+    background: rgb(52, 73, 94);
+    padding: 16px;
 }
 
-.btnHeader {
-    width: 160px;
-    height: 50px;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 25px;
-    border: 1px dashed white;
+nav ul {
+    list-style: none;
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(to right, rgb(32, 32, 32), rgb(19, 112, 92));
+    gap: 32px;
+}
+
+nav a {
     color: white;
     text-decoration: none;
-    transition: 0.3s;
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    transition: color 0.3s ease;
 }
 
-.btnHeader:hover {
-    transform: scale(1.1);
-    width: 200px;
+nav a:hover {
+    color: #3498db;
+}
+
+.txtHeader {
+    background-color: #14212e;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
 }
 
 #Banner {
     width: 100%;
-    height: 50vh;
+    height: auto;
     display: flex;
     align-items: center;
     gap: 15px;
     justify-content: center;
-    padding: 0 15px;
-    background-image: linear-gradient(to right, rgb(32, 32, 32), rgb(19, 112, 92));
-    border-bottom: 2px dashed white;
+    background: #c3cfe2;
+    border-bottom: 2px solid white;
 }
 
 .ridleyScott {
@@ -66,8 +75,7 @@ body {
 
 .txtBanner {
     margin-left: 35%;
-    color: white;
-    text-shadow: 4px 2px rgb(4, 41, 16);
+    color: rgb(52, 73, 94);
     font-weight: bold;
     font-size: 65px;
     text-align: center;
@@ -77,8 +85,7 @@ body {
 .txtSecundario {
     margin-left: 35%;
     margin-top: 8%;
-    color: white;
-    text-shadow: 4px 2px rgb(4, 41, 16);
+    color: rgb(52, 73, 94);
     font-size: 20px;
     text-align: center;
     position: absolute;
@@ -86,63 +93,61 @@ body {
 
 #Corpo {
     width: 100%;
-    height: 200vh;
+    height: 130vh;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0 15px;
-    background-image: linear-gradient(to right, rgb(35, 58, 42), rgb(19, 112, 92));
-    margin-bottom: ;
+    background-color: #34495e;
+    position: relative;
+    border-bottom: 2px solid white;
 }
 
 .ridleyImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 650px;
     height: auto;
     margin-left: 50%;
-    margin-bottom: 20%;
+    margin-bottom: 42vh;
     border-radius: 30px;
-    border: 2px solid rgb(54, 148, 109);
+    border: 2px solid rgb(255, 255, 255);
     position: absolute;
 }
 
 .titleCrp {
     position: absolute;
     font-family: 'Kanit', 'sans-serif';
-    font-style: normal;
-    font-weight: 300;
-    font-display: swap;
-    color: white;
-    text-shadow: 4px 2px rgb(4, 41, 16);
-    font-size: 35px;
     font-weight: 700;
+    color: white;
+    text-shadow: 4px 2px rgba(34, 37, 75, 0.685);
+    font-size: 35px;
+    margin-bottom: 50%;
+    margin-right: 45%;
 }
 
 .txtCrp {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 25%;
+    margin-bottom: 55vh;
     margin-right: 50%;
     font-family: 'Kanit';
-    position: relative;
     font-weight: 400;
-    font-display: swap;
     text-align: justify;
     color: white;
-    text-shadow: 4px 2px rgb(4, 41, 16);
     font-size: 20px;
 }
 
 .titleCrp2 {
     position: absolute;
     font-family: 'Kanit', 'sans-serif';
-    font-style: normal;
     font-weight: 500;
     font-size: 35px;
-    font-display: swap;
     color: white;
-    text-shadow: 4px 2px rgb(4, 41, 16);
-    margin-bottom: 2%;
+    text-shadow: 4px 2px rgba(34, 37, 75, 0.685);
+    margin-top: 15px;
     margin-right: 50%;
 }
 
@@ -152,12 +157,210 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Kanit';
-    margin-top: 25%;
-    margin-right: 25%;
     font-weight: 400;
-    font-display: swap;
-    text-align: justify;
-    color: white;
-    text-shadow: 4px 2px rgb(4, 41, 16);
     font-size: 20px;
+    padding: 20px;
+    color: white;
+    text-align: justify;
+    line-height: 1.5;
+    margin-top: 30%;
+    margin-right: 25%;
+}
+
+#Corpo2 {
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    padding: 0 15px;
+    background-color: #14212e;
+    border-bottom: 2px dashed white;
+}
+
+.titleCrp3 {
+    position: absolute;
+    font-family: 'Kanit', 'sans-serif';
+    font-weight: 800;
+    font-size: 35px;
+    color: white;
+    text-shadow: 4px 2px rgba(34, 37, 75, 0.685);
+    margin-bottom: 130vh;
+    text-align: justify;
+}
+
+.txtCrp3 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kanit';
+    font-weight: 400;
+    font-size: 20px;
+    padding: 20px;
+    color: white;
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 100vh;
+}
+
+.containerFilmes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    margin-top: 2%;
+}
+
+.imageContainer {
+    position: relative;
+    width: 250px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 25px;
+    margin-top: 2%;
+}
+
+.imgFilme {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.imageContainer:hover .imgFilme {
+    transform: scale(1.1);
+}
+
+.txtCrp4 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kanit';
+    font-weight: 400;
+    font-size: 20px;
+    padding: 20px;
+    color: white;
+    text-align: justify;
+    line-height: 1.5;
+    padding-top: 50%;
+}
+
+.imageTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-bottom: 32%;
+    margin-left: 25%;
+    color: white;
+    font-family: "Kanit", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.imageContainer:hover .imgFilme {
+    transform: scale(1.1);
+}
+
+.imageContainer:hover .imageTitle {
+    opacity: 1;
+}
+
+#Premios {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#Premios::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/bafta.png');
+    background-size: cover;
+    background-position: center;
+    filter: blur(4px);
+    z-index: 1;
+}
+
+.boxConteudo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.titlePremios {
+    position: absolute;
+    font-family: 'Kanit', 'sans-serif';
+    font-weight: 800;
+    font-size: 35px;
+    color: white;
+    text-shadow: 4px 2px rgba(34, 37, 75, 0.685);
+    text-align: justify;
+    margin-bottom: 40%;
+}
+
+.txtPremios {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 20px;
+    color: white;
+    border-radius: 25px;
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 25%;
+}
+
+.imgContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgPremio {
+    position: absolute;
+    width: 500px;
+    height: 250px;
+    margin-left: 95vh;
+    margin-top: 15%;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+
+.imgPremio2 {
+    position: absolute;
+    width: 500px;
+    height: 250px;
+    margin-right: 100vh;
+    margin-top: 15%;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+
+footer {
+    background: #34495e;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    margin-top: auto;
 }

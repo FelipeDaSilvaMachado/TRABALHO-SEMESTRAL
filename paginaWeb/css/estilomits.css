@@ -1,0 +1,119 @@
+/* Configuração global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', 'Lexend', sans-serif;
+}
+
+body {
+    background: #c3cfe2;
+    min-height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 32px;
+    margin-bottom: 48px;
+}
+
+nav {
+    background: #34495e;
+    padding: 16px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #3498db;
+}
+
+
+p, h2, b {
+    margin: 0 auto;
+    max-width: 980px;
+    text-align: justify;
+    line-height: 1.6;
+    padding: 0 16px;
+}
+
+
+.first-image-container {
+    display: flex;
+    justify-content: center; 
+    gap: 32px; 
+    margin: 24px 0;
+}
+
+.image-box img {
+    height: 270px; 
+    width: 230px; 
+    border-radius: 15px;
+    border: solid #2c3e50;
+}
+
+.caption {
+    font-size: 14px;
+    color: #555;
+    margin-top: 8px;
+}
+
+
+.altair-container {
+    text-align: center;
+    margin: 32px auto;
+}
+
+.altair {
+    width: 800px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    border: solid #2c3e50;
+}
+
+#altair-caption {
+    font-size: 16px;
+    margin-top: 12px;
+    color: #555;
+}
+
+#cartaz{
+    height: 350px;
+    border-radius: 15px;
+    border: solid #2c3e50;
+
+}
+
+#logo {
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    border: solid #2c3e50;
+}
+
+
+footer {
+    background: #34495e;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    margin-top: auto;
+}
