@@ -1,5 +1,5 @@
-('D:\\ETEC\\PROGRAMACAO E ALGORITMOS\\TRABALHO '
- 'SEMESTRAL\\jogoEmPython\\build\\forca\\PYZ-00.pyz',
+('D:\\ETEC\\PROGRAMACAO E '
+ 'ALGORITMOS\\TRABALHO-SEMESTRAL\\jogoEmPython\\build\\forca\\PYZ-00.pyz',
  [('_compat_pickle',
    'D:\\Program Files\\Python\\Lib\\_compat_pickle.py',
    'PYMODULE'),

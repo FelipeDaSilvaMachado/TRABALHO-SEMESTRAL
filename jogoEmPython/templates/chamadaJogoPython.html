@@ -2,40 +2,82 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="../assets/cssJogo/chamadaJogo.css">
-    <title>Jogo da Forca</title>
+  <meta charset="UTF-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/cssJogo/chamadaJogo.css" />
+  <title>Jogo da Forca</title>
 </head>
 
 <body>
-    {% comment %} colocar o header da pagina aqui com os botoes {% endcomment %}
-    <div class="container">
-        <h1 class="lexend-bold">Bem-vindo ao Jogo da Forca</h1>
-        <button class="btn-jogar" onclick="iniciarJogo()">Jogar</button>
+  <nav>
+    <div class="menu">
+      <ul>
+        <li>
+          <a href="../../paginaWeb/templates/index.html"> Início </a>
+        </li>
+        <li>
+          <a href="../../paginaWeb/templates/equipe.html"> Equipe </a>
+        </li>
+        <li>
+          <a href="../../paginaWeb/templates/mits.html"> MITS </a>
+        </li>
+        <li>
+          <a href="../../paginaWeb/templates/biografia.html">
+            Ridley Scott
+          </a>
+        </li>
+        <li>
+          <a href="../../paginaWeb/templates/banco_de_dados.html">
+            Banco de Dados
+          </a>
+        </li>
+        <li>
+          <a href="../../paginaWeb/templates/etica.html"> Análise Ética </a>
+        </li>
+        <li>
+          <a href="../../paginaWeb/templates/glossario.html"> Glossário </a>
+        </li>
+        <li>
+          <a href="../../paginaWeb/templates/abnt.html"> Artigo </a>
+        </li>
+        <li>
+          <a href="../../jogoEmPython/templates/chamadaJogoPython.html">
+            Jogo Em Python
+          </a>
+        </li>
+      </ul>
     </div>
-    <div id="mensagemModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="fecharModal()">&times;</span>
-            <p class="kanit-regular">
-                Esse jogo foi criado para que você se divirta tentando
-                adivinhar qual palavra está escondida nele, usamos
-                palavras chaves espalhadas em nosso site para criá-lo.
-                Bom divertimento!!!
-            </p>
-            <button id="btnBaixar" class="btn-baixar" onclick="baixarJogo()">
-                Fazer download do jogo
-            </button>
-        </div>
+  </nav>
+  <div class="container">
+    <h1 class="lexend-bold">Bem-vindo ao Jogo da Forca</h1>
+    <button class="btn-jogar" onclick="iniciarJogo()">Jogar</button>
+  </div>
+  <div id="mensagemModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="fecharModal()">&times;</span>
+      <p class="kanit-regular">
+        Esse jogo foi criado para que você se divirta tentando adivinhar qual
+        palavra está escondida nele, usamos palavras chaves espalhadas em
+        nosso site para criá-lo. Bom divertimento!!!
+      </p>
+      <button id="btnBaixar" class="btn-baixar" onclick="baixarJogo()">
+        Fazer download do jogo
+      </button>
     </div>
-    <script src="../assets/jsJogo/chamadaJogo.js" defer></script>
+  </div>
+  <div id="divFooter">
+    <div id="footer">
+      <p>Etec de Guarulhos - Trabalho Interdisciplinar 2024</p>
+    </div>
+  </div>
+  <script src="../../jogoEmPython/assets/jsJogo/chamadaJogo.js" defer></script>
 </body>
 
 </html>

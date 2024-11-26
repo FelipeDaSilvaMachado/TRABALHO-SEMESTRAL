@@ -12,8 +12,17 @@ function iniciarJogo() {
 
 // Função para baixar o jogo
 function baixarJogo() {
-    fetch('http://127.0.0.1:5500/dist/forca.exe')
-        .then(response => response.blob())
+    // Caminho completo ou relativo
+    const downloadLink = '../dist/forca.exe';
+    
+    // Verifica se o arquivo existe
+    fetch(downloadLink)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Arquivo não encontrado');
+            }
+            return response.blob();
+        })
         .then(blob => {
             const url = window.URL.createObjectURL(blob);
             const a = document.createElement('a');
@@ -21,11 +30,14 @@ function baixarJogo() {
             a.href = url;
             a.download = 'forca.exe';
             document.body.appendChild(a);
-            a.click(); window.URL.revokeObjectURL(url);
+            a.click();
+            window.URL.revokeObjectURL(url);
+            fecharModal();
         })
-        .catch(() => alert('Falha ao baixar o arquivo!'));
-    // Fecha o modal de informações
-    fecharModal();
+        .catch(error => {
+            alert('Falha ao baixar o arquivo: ' + error.message);
+            console.error('Detalhes:', error);
+        });
 }
 
 // Evento para fechar o modal se clicar fora dele

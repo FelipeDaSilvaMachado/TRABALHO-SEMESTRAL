@@ -13,20 +13,53 @@ body {
     /* Define a fonte do texto */
     display: flex;
     /* Usa flexbox para centralizar conteúdo */
-    justify-content: center;
-    /* Centraliza horizontalmente */
-    align-items: center;
-    /* Centraliza verticalmente */
-    height: 100vh;
-    /* Altura total da viewport */
-    margin: 0;
-    /* Remove margens padrão */
-    background-image: linear-gradient(to top, rgb(194, 137, 62), rgb(165, 69, 56));
+    flex-direction: column;
+    /* direção do corpo da página em coluna */
+    background-color: rgb(195, 207, 226);
     /* Cor de fundo cinza claro */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    background: rgb(52, 73, 94);
+    padding: 16px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: rgb(52, 152, 219);
 }
 
 /* Estilo do container principal */
 .container {
+    display: flex;
+    /* Usa flexbox para centralizar conteúdo */
+    flex-direction: column;
+    /* direção do corpo da página em coluna */
+    margin-top: 150px;
+    /* Centraliza horizontalmente */
+    align-self: center;
+    /* Centraliza verticalmente */
+    width: max-content;
+    /* largura total da viewport */
+    height: max-content;
+    /* Altura total da viewport */
     text-align: center;
     /* Centraliza texto */
     padding: 20px;
@@ -47,11 +80,15 @@ body {
 
 /* Estilo do botão Jogar */
 .btn-jogar {
+    display: flex;
+    width: max-content;
+    justify-content: center;
+    align-self: center;
     margin: 10px 0px 0px 0px;
     /* Margem de distancia do botao para o texto */
     padding: 15px 30px;
     /* Espaçamento interno do botão */
-    background-image: linear-gradient(to top, rgb(194, 137, 62), rgb(165, 69, 56));
+    background-color: rgb(44, 62, 80);
     /* Mudar a cor dps de definido */
     color: rgb(255, 255, 255);
     /* Texto branco */
@@ -71,7 +108,7 @@ body {
 
 /* Efeito hover do botão */
 .btn-jogar:hover {
-    background-image: linear-gradient(to top, rgb(205, 150, 75), rgb(180, 80, 70));
+    background-color: rgb(195, 207, 226);
     /* Cor mais clara ao passar o mouse */
 }
 
@@ -115,7 +152,7 @@ body {
 .btn-baixar {
     padding: 15px 30px;
     /* Espaçamento interno do botão */
-    background-image: linear-gradient(to top, rgb(194, 137, 62), rgb(165, 69, 56));
+    background-color: rgb(44, 62, 80);
     color: rgb(255, 255, 255);
     /* Texto branco */
     border: none;
@@ -136,7 +173,7 @@ body {
 
 /* Efeito hover do botão */
 .btn-baixar:hover {
-    background-image: linear-gradient(to top, rgb(205, 150, 75), rgb(180, 80, 70));
+    background-color: rgb(195, 207, 226);
     /* Cor mais clara ao passar o mouse */
 }
 
@@ -159,4 +196,21 @@ body {
     /* Tamanho da fonte */
     cursor: pointer;
     /* Cursor vira mãozinha */
+}
+
+#divFooter {
+    display: flex;
+    flex-direction: column;
+    margin-top: 174px;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    border-top: 2px solid rgb(255, 255, 255);
+    background: rgb(52, 73, 94);
+    color: rgb(255, 255, 255);
 }
