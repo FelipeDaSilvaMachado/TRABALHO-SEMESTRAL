@@ -5,11 +5,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Kanit', 'Lexant', sans-serif;
+    /* Define a fonte do texto */
 }
 
 body {
-    font-family: "Lexend", "sans-serif";
-    overflow-x: hidden;
     background-color: rgb(195, 207, 226);
 }
 
