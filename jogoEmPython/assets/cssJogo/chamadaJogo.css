@@ -204,7 +204,8 @@ nav a:hover {
 #divFooter {
     display: flex;
     flex-direction: column;
-    margin-top: 174px;
+    width: 100%;
+    height: 100px;
     position: fixed;
     bottom: 0;
     left: 0;
